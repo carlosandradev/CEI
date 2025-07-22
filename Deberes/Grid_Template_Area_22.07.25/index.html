@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Areas</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+
+    .e {
+      margin-bottom: 80px;
+      border: 2px solid #ccc;
+      padding: 20px;
+    }
+
+    .g1 {
+      display: grid;
+      grid-template-areas:
+        "h h"
+        "n m"
+        "f f";
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+    }
+
+    .h {
+      grid-area: h;
+      background-color: #faa;
+      padding: 20px;
+    }
+
+    .n {
+      grid-area: n;
+      background-color: #afa;
+      padding: 20px;
+    }
+
+    .m {
+      grid-area: m;
+      background-color: #aaf;
+      padding: 20px;
+    }
+
+    .f {
+      grid-area: f;
+      background-color: #ffa;
+      padding: 20px;
+    }
+
+    .g2 {
+      display: grid;
+      grid-template-areas:
+        "a a"
+        "b c"
+        "d d";
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+    }
+
+    .a {
+      grid-area: a;
+      background-color: #f77;
+      padding: 20px;
+    }
+
+    .b {
+      grid-area: b;
+      background-color: #7f7;
+      padding: 20px;
+    }
+
+    .c {
+      grid-area: c;
+      background-color: #77f;
+      padding: 20px;
+    }
+
+    .d {
+      grid-area: d;
+      background-color: #ff7;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="e">
+    <div class="g1">
+      <div class="h">Header</div>
+      <div class="n">Nav</div>
+      <div class="m">Main</div>
+      <div class="f">Footer</div>
+    </div>
+  </div>
+
+  <div class="e">
+    <div class="g2">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+    </div>
+  </div>
+
+</body>
+</html>
