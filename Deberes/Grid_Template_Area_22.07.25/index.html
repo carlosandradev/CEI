@@ -18,33 +18,33 @@
     .g1 {
       display: grid;
       grid-template-areas:
-        "h h"
-        "n m"
-        "f f";
+        "header header"
+        "nav main"
+        "footer footer";
       grid-template-columns: 1fr 2fr;
       gap: 10px;
     }
 
     .h {
-      grid-area: h;
+      grid-area: header;
       background-color: #faa;
       padding: 20px;
     }
 
     .n {
-      grid-area: n;
+      grid-area: nav;
       background-color: #afa;
       padding: 20px;
     }
 
     .m {
-      grid-area: m;
+      grid-area: main;
       background-color: #aaf;
       padding: 20px;
     }
 
     .f {
-      grid-area: f;
+      grid-area: footer;
       background-color: #ffa;
       padding: 20px;
     }
@@ -88,10 +88,10 @@
 
   <div class="e">
     <div class="g1">
-      <div class="h">Header</div>
-      <div class="n">Nav</div>
-      <div class="m">Main</div>
-      <div class="f">Footer</div>
+      <div class="header">Header</div>
+      <div class="nav">Nav</div>
+      <div class="main">Main</div>
+      <div class="footer">Footer</div>
     </div>
   </div>
 
