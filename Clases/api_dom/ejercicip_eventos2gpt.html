@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Barras 1–10 simple</title>
+<style>
+  body { margin:0; background:#000; color:#fff; font-family:system-ui, Arial; display:grid; place-items:center; height:100vh; }
+  .row { display:flex; align-items:center; gap:16px; }
+  button { font-size:28px; width:56px; height:56px; border-radius:8px; border:1px solid #444; background:#111; color:#fff; cursor:pointer; }
+  #num { font-size:48px; width:80px; text-align:center; }
+  .bars { display:flex; gap:8px; margin-top:18px; }
+  .bar { width:28px; height:90px; background:#222; }
+  /* Colores fijos por posición */
+  .bar:nth-child(-n+5).on  { background:#2ecc40; } /* verdes 1–5 */
+  .bar:nth-child(n+6):nth-child(-n+8).on { background:#f1c40f; } /* amarillas 6–8 */
+  .bar:nth-child(n+9).on { background:#e74c3c; } /* rojas 9–10 */
+</style>
+</head>
+<body>
+
+  <div class="row">
+    <button id="menos">−</button>
+    <div id="num">1</div>
+    <button id="mas">+</button>
+  </div>
+
+  <div id="barras" class="bars">
+    <!-- 10 barritas -->
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+  </div>
+
+<script>
+  const MIN = 1, MAX = 10;
+  const num = document.getElementById('num');
+  const menos = document.getElementById('menos');
+  const mas = document.getElementById('mas');
+  const bars = Array.from(document.querySelectorAll('.bar'));
+
+  let valor = 1;
+  function render(){
+    num.textContent = valor;
+    bars.forEach((b,i) => b.classList.toggle('on', i < valor));
+  }
+  menos.onclick = () => { if (valor > MIN) { valor--; render(); } };
+  mas.onclick   = () => { if (valor < MAX) { valor++; render(); } };
+
+  render();
+</script>
+</body>
+</html>

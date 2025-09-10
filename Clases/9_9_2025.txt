@@ -1,0 +1,8 @@
+gestionar atributos
+
+ELEMENTO.setAttribute()
+ELEMENTO.getAttribute(atributo)
+ElEMENTO.removeAttribute()
+
+elemento.addEventListener(evento, callback) 
+

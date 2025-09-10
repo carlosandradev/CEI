@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <a href="https://google.com">enlace 1</a>
+  </div>
+  <div>
+    <img src="https://picsum.photos/200" alt="">
+  </div>
+  <script>
+    const enlace = document.querySelector("a");
+    const imagen = document.querySelector("img");
+
+    console.log(imagen.getAttribute("src"));
+
+    imagen.setAttribute("src", "https://picsum.photos/600/400");
+
+    enlace.removeAttribute("href");
+
+    imagen.setAttribute("style", "border: 10px solid blue; border-radius: 0, 20px 0 0");
+  </script>
+</body>
+</html>

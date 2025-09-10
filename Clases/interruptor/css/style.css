@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100dvh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #222;
+}
+
+.interruptor {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #555, #ccc);
+  cursor: pointer;
+}
+
+.interruptor span {
+
+  display: block;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #999, #333);
+
+}
+
+.encendido span {
+  background-image: linear-gradient(to right, #ff0, #f70);
+  animation: efecto 0.6s infinite;
+}
+
+@keyframes efecto {
+  0%, 100% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0);
+  } 
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.4);
+  } 
+}

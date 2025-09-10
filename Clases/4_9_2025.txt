@@ -1,0 +1,12 @@
+gestion de clases:
+
+elemento.className ----> string que representa el contenido del atributo classs --> getter/setter
+
+elemento.classList --> coleccion de clases
+metodos (funciones dentro)
+
+.add (clases, separadas, por, comas)
+.remove(clases, )
+
+.contains(clases). ---> true | false
+

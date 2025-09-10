@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cursor{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 3px solid black;
+      position: fixed;
+      animation: escala 0.8s infinite;
+    }
+    @keyframes escala {
+      0%, 100%{
+        scale:1;
+      }
+      50%{
+        scale: 0.4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor"></div>
+  <script>
+    const cursor = document.querySelector(".cursor");
+
+    window.addEventListener("mousemove", evento => {
+      cursor.style.top = evento.clientY + "px";
+      cursor.style.left = evento.clientX + "px";
+    });
+
+  </script>
+</body>
+</html>

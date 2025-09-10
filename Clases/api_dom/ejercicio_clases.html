@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .cuadro{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 20px;
+    }
+
+    .azul{
+      background-color: blue;
+    }
+
+    .negro{
+      background-color: black;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="cuadro"></div>
+  <ul>
+    <li>rojo</li>
+    <li>azul</li>
+    <li>negro</li>
+  </ul>
+  <script>
+    const cuadro = document.querySelector(".cuadro");
+    const items = document.querySelectorAll("li");
+
+    
+    /*
+    items[0].addEventListener("click", () => {
+      cuadro.className = "cuadro";
+    });
+
+    items[1].addEventListener("click", () => {
+      cuadro.className = "cuadro";
+    });
+
+    items[2].addEventListener("click", () => {
+      cuadro.className = "cuadro";
+    });
+
+    */
+
+    for(let i = 0; i < items.length; i++){
+      items[i].addEventListener("click", () => {
+        cuadro.className = `cuadro ${ i > 0 ? items [i].innerText : ""}`;
+      });
+    }
+
+
+
+
+
+  </script>
+</body>
+</html>

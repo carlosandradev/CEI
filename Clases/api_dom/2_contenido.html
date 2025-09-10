@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="hola">cosa</h1> 
+  <ul>
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+  </ul>
+  <script>
+
+    const h1 = document.querySelector("h1");
+    const lista = document.querySelector("ul");
+
+    console.log(h1.innerText); // getting
+
+    h1.innerText = "bla <span>bla<span> bla"; // setting
+
+    console.log(lista.innerText);
+
+    console.log(lista.innerHTML);
+
+    console.log(lista.children);
+
+    lista.children[1].innerText = "lo que sea";
+
+
+  </script>
+</body>
+</html>

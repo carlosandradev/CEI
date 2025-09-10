@@ -1,0 +1,74 @@
+ARRAY.forEach
+ARRAY.map
+ARRAY.filter
+
+forEach ----> invoca una funcion por cada elemento de un ARRAY
+
+
+ARRAY.forEach(callback)
+
+colores.forEach();
+
+
+callbacks ---- recibe 3 argumentos --> el elemento, el indice, el array completo
+
+
+
+split es un metodo (funcion) de los string que permite crear un array a partir de un string usando como referencia un separador (retorna un Array)
+
+STRING.split(separador)
+
+ARRAY.join("conector")
+
+join --> retorna un String a parterir de los elementos de un array, usando un conector
+
+
+funciones flecha (arrow functions)
+
+anonimas por naturaleza, con una sintaxis simple
+
+function(){
+
+}
+
+se cambia la palabra function por un igual y mayor que despues de los parentesis
+
+() => {
+
+}
+
+normalmente se usan como callbacks
+
+function(a, b){
+  return a + b;
+}
+
+// si la funcion retorna directamente un valor, no necesita llaves, ni la palabra RETURN
+(a,b) => a + b;
+
+
+(a,b) => {
+  return a + b;
+}
+
+// Si la funcion recibe un solo parametro, no necesita parentesis.
+
+function(a){
+  return a * 4;
+}
+
+a => a * 4;
+
+------------------------------
+
+ARRAY.map(callback)
+map ---> genera (RETORNA) un array a partir de otro, cada elemento del nuevo array sera derivado de lo que retorne la funcio (callback) para ese elemento.
+
+ARRAY.filter(callback)
+
+genera un array a partir de otro filtrando valores con un callback
+
+callback ----> elemento, indice, array completo
+
+
+-------------------------------

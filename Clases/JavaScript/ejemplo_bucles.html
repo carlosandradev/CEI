@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo buclest</title>
+</head>
+<body>
+  <script>
+
+    var estudiantes = ["Alejandro", "Andrea", "Carlos", "Cheryl", "Jairo", "Laura", "Nathalia", "Paola", "Valeria", "Yajaira", "Nicholas"];
+    var aprobados = [];
+    var aprobado = estudiantes[Math.floor(Math.random()*estudiantes.length)];
+    var indice = -1;
+
+    for(var i = 1; i <=3; i++ ){
+
+      while(indice >= 0){
+        aprobado = estudiantes[Math.floor(Math.random()*estudiantes.length)];
+        indice = -1;
+        for(var j = 0; j < aprobados.length; j++){
+          if(aprobados[j] == aprobado){
+            indice = j;
+          }
+        }
+      }
+      aprobados.push(aprobado);
+      indice = aprobados.length -1;
+    }
+
+    console.log(aprobados);
+
+
+    /*
+
+
+
+
+    */
+
+
+
+  </script>
+</body>
+</html>

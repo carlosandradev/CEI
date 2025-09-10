@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function prueba(a){//el parametro 'a' es una funcion
+    // que sera invocada dentro de la funcion prueba.
+    a();
+    }
+    prueba(function(){
+      console.log('voy a ser invocada por prueba');
+    });
+
+  </script>
+</body>
+</html>

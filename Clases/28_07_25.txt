@@ -1,0 +1,54 @@
+JavaScript
+- JavaScript como lenguaje
+- Api DOM
+- JS Asincrono
+
+1 - Que hace, Como se hace?
+
+---------------------
+1 - Variables / Constantes
+2 - Condicionales
+3 - Bucles
+4 - Funciones
+
+
+antes del 2008 - Interactivo el sitio web HTML manipulacion del DOM y conexiones a servidor
+
+del 2008 en adelante --> multiproposito (alto nivel) No puedo entrar en las entranas del computador
+
+Variables:
+
+informacion guardada en la memoria ram que puede cambiar o variar
+
+var --> palabra clave para crear una variable
+
+
+JS es un lenguaje de tipado dinamico: significa 
+
+Javascript no hace diferencia entre los numeros.
+
+enteros(integer) - decimal()
+
+
+operadores aritmeticos:
+
+ + - * /
+
+ +=
+ -=
+ *=
+ /=
+
+
+ a = a *3;  ----> a *= 3
+
+     a = a + 1;  --> a+= 1 ---> a++;
+    a = a - 1;  --> a-= 1 ----> a--;
+
+
+JavaScript no es compilado sino interpretado
+
+
+El concepto de constante 
+
+Las constantes son variables a las que no se les puede cambiar el valoryou

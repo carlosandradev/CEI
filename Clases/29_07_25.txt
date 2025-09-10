@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+Boolean ----> true - false
+
+
+
+Operadores de comparacion
+
+==
+!=
+>
+>=
+<
+<=
+
+Operadores logicos
+
+&& ---> and
+|| ---> Or
+! ----> not
+
+
+!! ----> saber el equivalente boolean de un dato
+
+
+---------------------------------------------------
+
+
+condicionales
+
+--> estructura de control que permite decidir si una o unas lineas de codigo se ejecutan
+
+
+if/else
+else / if
+switch
+operador ternario ---> 
+
+
+if(cualquier cosa evaluable como TRUE o FALSE){
+  el bloque ejecuta de ser TRUE
+}else{
+  el bloque ejecuta de ser FALSE
+}
+
+---------------------------------------------------
+
+
+cada vez que el archivo js no esta completamente descargado no se lee el resto del html
+pero con la palabra clave defer antes del scr se retrasa el recargado del script hasta que el html se cargue
+
+------------------------------------------------
+
+Operador ternario
+
+condicion ? true : false 
+
+
+----------------------------------------------------
+
+instrucciones declarativas --> statements --> cualquier cosa que escriba que no genere un resultado (ejemplo console.log)
+expresiones ---> expressions --> siempre producen un resultado
+
+
+---------------------------------------------------
+
+template string
+
+
+estan delimitados con el acento grave
+
+` bla bla bla`
+
+segmentos dinamicos ----> ${ cualquier expresion de JS }

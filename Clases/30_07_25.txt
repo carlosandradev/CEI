@@ -1,0 +1,57 @@
+bucles
+
+while(condicion) {
+  //Este bloque se repetira siempre que la condicion sea TRUE
+}
+
+
+----------------------
+
+Estructura de datos:
+
+Es una forma de agrupar datos similares
+
+indexados = arrays ---> guardar una informacion de manera consecutiva en la memoria ram. Es una referencia a donde esta el primer elemento.
+
+Arrays ----> [] 
+
+string es un array de caracteres. 
+
+
+for ----> bucle ---> para cada elemento de un array, quiero hacer x acciones
+
+
+for (variable contadora, condicion para iterar, forma de modificar la var contadora){
+  // mientras se cumpla la condicion el bloque se repite
+}
+
+
+cuando usar while o cuando usar for
+la pregunta es cual es la diferencia realmente:
+
+FOR -->  Siempre sabemos o podemos saber la cantidad de repeticiones
+WHILE -> quizas no sabemos la cantidad de repeticiones
+
+
+----------------------------
+
+var = 123.6
+Math.round(a) ----> 124
+
+
+var = 123.1
+Math.round(a) ----> 123
+
+--------------------------
+
+Math.floor(a) ---> 123 ---> redondea al entero interior
+Math.ceil(a) ----> 124 ---> redondea al entero superior
+
+-----------------------
+
+Math.random() -----> retorna un numero entre 0 y 1, pero sin llegar nunca a 1
+
+----------------------
+
+Array.push(elemento) ----> anadir un elemento al final del array
+

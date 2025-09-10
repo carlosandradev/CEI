@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      width: 500%;
+      display: flex;
+    }
+    section{
+      width: 20%;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+    }
+
+    h2{
+      font-weight: normal;
+      font-size: 10em;
+      text-transform: uppercase;
+    }
+    section:nth-child(even){
+      background-color: black;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <h2>a</h2>
+  </section>
+  <section>
+    <h2>b</h2>
+  </section>
+  <section>
+    <h2>c</h2>
+  </section>
+  <section>
+    <h2>d</h2>
+  </section>
+  <section>
+    <h2>e</h2>
+  </section>
+  <script>
+    const secciones = document.querySelectorAll("section");
+
+    secciones.forEach( seccion => seccion.style.height = document.documentElement.clientHeight + "px");
+
+    window.addEventListener("wheel", evento => {
+      window.scrollTo(window.scrollX + evento.deltaY,0);
+    });
+  </script>
+</body>
+</html>

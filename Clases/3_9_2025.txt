@@ -1,0 +1,42 @@
+objetos:
+
+{} ----> caracteristica de los objetos
+
+{
+  clave: valor,
+  clave: valor,
+  etc: etc
+
+}
+
+
+---
+
+API DOM ---> html ---> js
+
+window ---> ventana del navegador
+document ---> el documento HTML cargado en el navegador
+
+document.getElementById
+document.getElementByTagName
+document.getElementByClassName
+
+
+document.querySelector ---> selecciona el primer elemento que encaje con el selector de getElementByClassName || null
+
+document.querySelectorAll ---> selecciona TODOS los elementos queencajen con el selector de CSS
+
+
+----------------
+
+gestion del contenido de un elemento
+
+*) string
+ 
+elemento.innerText. ---> getter - setter
+
+*) string HTML
+
+elemento.innerHTML ---> getter / setter
+
+*) elementos

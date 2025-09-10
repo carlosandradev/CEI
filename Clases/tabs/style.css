@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: monospace;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; 
+}
+
+nav button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-family: monospace;
+  padding: 10px 15px;
+  color: #777;
+  font-size: 1.5em;
+}
+
+nav button.activo{
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #777;
+  border-bottom: none;
+  color: #333;
+}
+
+.panel {
+  padding: 10px 20px;
+  display: none;
+}
+
+.panel.activo{
+  display: block;
+  animation: fade 0.8s;
+}
+
+.panel h2,.panel p{
+  font-weight: normal;
+  color: #333;
+}
+
+.panel p{
+  margin-top: 10px;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,22 @@
+ambito donde viven las variables
+global --- por fuera de las funciones se pueden variables
+variables declaradas dentro de una funcion no se pueden ver.
+
+de adentro puedo ver local
+de local no puedo ver adentro
+
+Hoisting
+
+el mueve todas las variables al inicio de su scope.
+
+-----------------------------------------------------
+
+callback ---> es una funcion invocada por otra.
+
+-----------------------------------------------------
+
+1) continuar con otra accion al momento de terminar una anterior (responder a procesos asincronos).
+2) hacer acciones especificas dentro de funciones genericas
+
+
+

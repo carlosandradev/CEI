@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cuadro{
+      width: 150px;
+      height: 150px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="cuadro"></div>
+  <script>
+    const cuadro = document.querySelector(".cuadro");
+
+    function color(){
+      return `rgb(${[0,0,0].map(() => Math.floor(Math.random() * 256)).join(",")})`;
+    }
+
+
+    cuadro.addEventListener("mouseenter", () =>{
+      cuadro.style.backgroundColor = color();
+    });
+
+        cuadro.addEventListener("mouseleave", () =>{
+      cuadro.style.backgroundColor = color();
+    });
+    
+  </script>
+</body>
+</html>
